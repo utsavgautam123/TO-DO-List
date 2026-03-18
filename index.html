@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futuristic Sid To-Do List</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app neon-border">
+        <header>
+          <h2><i class="fa-solid fa-layer-group"></i> Nexus Tasks</h2>
+        </header>
+        <div class="row">
+          <input
+            type="text"
+            id="input-box"
+            placeholder="Initialize new objective..."
+            autocomplete="off"
+          />
+          <button type="button" id="add-btn">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <ul id="list-container">
+          <!-- Dynamically populated -->
+        </ul>
+        <div class="stats">
+          <span id="task-count">0 tasks remaining</span>
+          <button id="clear-all" class="clear-btn">Clear Completed</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
